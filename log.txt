@@ -1,0 +1,37 @@
+
+movie-this found: 
+
+            Title: Scarface 
+
+            Year: 1983 
+
+            IMDB Rating: 8.3/10 
+
+            Rotten Tomatoes Rating: 81% 
+
+            Country:USA 
+
+            Language: English, Spanish 
+
+            Plot: In Miami in 1980, a determined Cuban immigrant takes over a drug cartel and succumbs to greed. 
+
+            Actor(s): Al Pacino, Steven Bauer, Michelle Pfeiffer, Mary Elizabeth Mastrantonio 
+********************
+movie-this found: 
+
+            Title: A Bronx Tale 
+
+            Year: 1993 
+
+            IMDB Rating: 7.8/10 
+
+            Rotten Tomatoes Rating: 97% 
+
+            Country:USA 
+
+            Language: English, Italian 
+
+            Plot: A father becomes worried when a local gangster befriends his son in the Bronx in the 1960s. 
+
+            Actor(s): Robert De Niro, Chazz Palminteri, Lillo Brancato, Francis Capra 
+********************

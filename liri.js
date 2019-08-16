@@ -62,10 +62,12 @@ function spotifyThisSong() {
             Album: ${data.tracks.items[0].album.name}\n
             Preview Link: ${data.tracks.items[0].external_urls.spotify} \n********************`
 
-            fs.appendFile('log.txt', songInfo);
+            fs.appendFile('log.txt', songInfo, function (error) {
+                if (error) throw error;
+            });
 
         } else {
-            return console.log(error)
+            return console.log(error);
         }
 
     });
@@ -81,16 +83,17 @@ function movieThis() {
         movie = 'Mr. Nobody'
     } else {
         movie = input;    
-        console.log(`********************`);
-        console.log(`Your movie info:`);
     }
+
+    console.log(`********************`);
+    console.log(`Your movie info:`);
 
     request('http://www.omdbapi.com/?t=' + movie + '&apikey=4d47306d', function (error, response, body) {
         if (!error && response.statusCode === 200) {
             console.log(`Movie Title: ${JSON.parse(body).Title}`);
             console.log(`Release Year: ${JSON.parse(body).Year}`);
             console.log(`IMDB Rating: ${JSON.parse(body).Ratings[0].Value}`);
-            console.log(`Rotten Tomatoes Rating: ${JSON.parse(body).Ratings[1].Value}`)
+            console.log(`Rotten Tomatoes Rating: ${JSON.parse(body).Ratings[1].Value}`);
             console.log(`Country: ${JSON.parse(body).Country}`);
             console.log(`Language: ${JSON.parse(body).Language}`);
             console.log(`Plot: ${JSON.parse(body).Plot}`);
@@ -107,10 +110,52 @@ function movieThis() {
             Plot: ${JSON.parse(body).Plot} \n
             Actor(s): ${JSON.parse(body).Actors} \n********************`
 
-            fs.appendFile('log.txt', movieInfo);
+            fs.appendFile('log.txt', movieInfo, function (error) {
+                if (error) throw error;
+            });
 
         } else {
-            return console.log(error)
+            return console.log(error);
+        }
+
+    });
+}
+
+//////////////////////////////////////////////////////
+function concertThis() {
+    var artist = '';
+    if (input === undefined) {
+        console.log(`********************`);
+        console.log(`Try another artist.`);
+    } else {
+        artist = input;
+    }
+
+    console.log(`********************`);
+    console.log(`Your artist info:`);
+
+    request("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp", 
+    function (error, response, body) {
+        if (!error && response.statusCode === 200) {         
+            console.log(`Venue: ${JSON.parse(body).venue.name}`);
+            console.log(`Venue City: ${JSON.parse(body).venue.city}`, 
+            `Venue Country: ${JSON.parse(body).venue.country}`);
+
+            // var concertDate = moment(userBand[i].datetime).format("MM/DD/YYYY hh:00 A");
+            // console.log(`Date and Time: ${concertDate}\n`);
+
+            var artistInfo = 
+            `\n concert-this found: \n
+            Venue: ${JSON.parse(body).venue.name} \n
+            Venue City: ${JSON.parse(body).venue.city} \n
+            Venue Country: ${JSON.parse(body).venue.country} \n********************`
+
+            fs.appendFile('log.txt', artistInfo, function (error) {
+                if (error) throw error;
+            });
+
+        } else {
+            return console.log(error);
         }
 
     });
