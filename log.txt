@@ -1,4 +1,26 @@
 
+spotify-this-song found: 
+
+            Song: Juicy 
+
+            Artist(s): The Notorious B.I.G. 
+
+            Album: Ready To Die The Remaster
+
+            Preview Link: https://open.spotify.com/track/5ByAIlEEnxYdvpnezg7HTX 
+********************
+
+spotify-this-song found: 
+
+            Song: Machine Gun Funk 
+
+            Artist(s): The Notorious B.I.G. 
+
+            Album: Ready To Die The Remaster
+
+            Preview Link: https://open.spotify.com/track/2bXI4Rbw1D7aVeHWLjn1Lb 
+********************
+
 movie-this found: 
 
             Title: Scarface 
@@ -17,21 +39,55 @@ movie-this found:
 
             Actor(s): Al Pacino, Steven Bauer, Michelle Pfeiffer, Mary Elizabeth Mastrantonio 
 ********************
+
 movie-this found: 
 
-            Title: A Bronx Tale 
+            Title: The Godfather 
 
-            Year: 1993 
+            Year: 1972 
 
-            IMDB Rating: 7.8/10 
+            IMDB Rating: 9.2/10 
 
-            Rotten Tomatoes Rating: 97% 
+            Rotten Tomatoes Rating: 98% 
 
             Country:USA 
 
-            Language: English, Italian 
+            Language: English, Italian, Latin 
 
-            Plot: A father becomes worried when a local gangster befriends his son in the Bronx in the 1960s. 
+            Plot: The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son. 
 
-            Actor(s): Robert De Niro, Chazz Palminteri, Lillo Brancato, Francis Capra 
+            Actor(s): Marlon Brando, Al Pacino, James Caan, Richard S. Castellano 
+********************
+
+concert-this found: 
+
+                    Artist: Eminem 
+
+                    Venue: Du Arena 
+
+                    Venue Location: 24.4666667,54.3666667 
+
+                    Venue City: Abu Dhabi, United Arab Emirates 
+********************
+
+concert-this found: 
+
+                    Artist: Snoop Dogg 
+
+                    Venue: Cabana Pool Bar 
+
+                    Venue Location: 43.6399511,-79.35431879999999 
+
+                    Venue City: Toronto, Canada 
+********************
+
+spotify-this-song found: 
+
+            Song: I Want It That Way 
+
+            Artist(s): Backstreet Boys 
+
+            Album: The Hits--Chapter One
+
+            Preview Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6 
 ********************
