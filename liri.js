@@ -100,8 +100,23 @@ function movieThis() {
         if (!error && response.statusCode === 200) {
             console.log(`\nMovie Title: ${JSON.parse(body).Title}`);
             console.log(`Release Year: ${JSON.parse(body).Year}`);
-            console.log(`IMDB Rating: ${JSON.parse(body).Ratings[0].Value}`);
-            console.log(`Rotten Tomatoes Rating: ${JSON.parse(body).Ratings[1].Value}`);
+
+            // Handle movies with no rating.
+            var imdbNoRating = "";
+            var rottenNoRating = "";
+                  if (JSON.parse(body).Ratings[0]) {
+                      imdbNoRating = JSON.parse(body).Ratings[0].Value
+                  } else {
+                      imdbNoRating = JSON.parse(body).imdbRating
+                  };
+                  if (JSON.parse(body).Ratings[1]) {
+                      rottenNoRating = JSON.parse(body).Ratings[1].Value
+                  } else {
+                      rottenNoRating = 'Rotten Tomatoes has no rating for this movie.'
+            }
+
+            console.log(`IMDB Rating: ${imdbNoRating}`);
+            console.log(`Rotten Tomatoes Rating: ${rottenNoRating}`);
             console.log(`Country: ${JSON.parse(body).Country}`);
             console.log(`Language: ${JSON.parse(body).Language}`);
             console.log(`Plot: ${JSON.parse(body).Plot}`);
@@ -111,8 +126,8 @@ function movieThis() {
             `\nmovie-this found: \n
             Title: ${JSON.parse(body).Title} \n
             Year: ${JSON.parse(body).Year} \n
-            IMDB Rating: ${JSON.parse(body).Ratings[0].Value} \n
-            Rotten Tomatoes Rating: ${JSON.parse(body).Ratings[1].Value} \n
+            IMDB Rating: ${imdbNoRating} \n
+            Rotten Tomatoes Rating: ${rottenNoRating} \n
             Country:${JSON.parse(body).Country} \n
             Language: ${JSON.parse(body).Language} \n
             Plot: ${JSON.parse(body).Plot} \n
@@ -170,7 +185,7 @@ function concertThis() {
                 };
 
             } else {
-                console.log('Concert not found!');
+                console.log('Concert not found.');
             };
         };
     });

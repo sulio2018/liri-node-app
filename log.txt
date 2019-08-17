@@ -110,3 +110,22 @@ movie-this found:
 
             Actor(s): Robert De Niro, Chazz Palminteri, Lillo Brancato, Francis Capra 
 ********************
+
+movie-this found: 
+
+            Title: Welcome to America 
+
+            Year: 2002 
+
+            IMDB Rating: 6.8/10 
+
+            Rotten Tomatoes Rating: No rating for this movie. 
+
+            Country:USA 
+
+            Language: English 
+
+            Plot: A gang of Estonian bank robbers in Los Angeles. 
+
+            Actor(s): Michael Madsen, Tom Sizemore, Carmen Kass, John Vernon 
+********************
