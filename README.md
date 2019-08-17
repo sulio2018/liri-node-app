@@ -2,16 +2,18 @@
 
 This is a command line application that takes in a user command and user search input and returns data from different APIs.
 
-## User commands: 
+## User Commands 
 - spotify-this-song returns song data.
 - movie-this returns movie data.
 - concert-this returns concert data on a particular artist.
 - do-what-it-says returns data from a random.txt file.
 
-## APIs used:
+## APIs Used
 - Spotify
 - OMDB
 - Bands in Town
+
+## Screenshots
 
 Take a look at these screenshots for expected results:
 
@@ -30,6 +32,8 @@ Take a look at these screenshots for expected results:
 ### do-what-it-says
 
 ![](https://github.com/sulio2018/liri-node-app/blob/master/images/liri4.PNG)
+
+## Stored Resuls
 
 In addition, all results are logged in a log.txt file, as such:
 
