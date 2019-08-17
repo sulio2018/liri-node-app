@@ -35,6 +35,10 @@ function userData (command, input) {
         case 'do-what-it-says':
             doWhatItSays(input);
             break;
+
+        default:
+            console.log("Error: Review your search.");
+            break;
     }
 };
 userData(command, input);
