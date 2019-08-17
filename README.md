@@ -16,7 +16,7 @@ APIs used:
 Take a look at these screenshots for expected results:
 
 spotify-this-song
-![](images/liri1.png)
+![](https://github.com/sulio2018/liri-node-app/blob/master/images/liri1.PNG)
 
 movie-this
 ![](images/liri2.png)
